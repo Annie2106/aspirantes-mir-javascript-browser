@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Palíndromo</title>
+</head>
+
+<body>
+  <label for="texto">Escribe algo:</label>
+  <input type="text" id="texto">
+  <button class="btn" type="button">Validar</button>
+  <p id="resultado"></p>
+
+  <script>
+    //DOM
+    const input = document.querySelector('#texto');
+    const btnValidar = document.querySelector('.btn');
+    const resultado = document.querySelector('#resultado');
+
+    //Función anónima para validar la cadena ingresada
+    btnValidar.addEventListener('click', function () {
+        const texto = input.value.toLowerCase().replace(/\s/g, '');
+        const textoInvertido = texto.split('').reverse().join('');
+
+        if (texto === textoInvertido) {
+          resultado.textContent = 'Es un palíndromo';
+        } else {
+          resultado.textContent = 'No es un palíndromo';
+        }
+      });
+  </script>
+</body>
+
+</html>

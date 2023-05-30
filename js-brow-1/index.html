@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayúsculas</title>
+</head>
+
+<body>
+    <label for="texto">Escribe algo aquí: </label>
+    <input type="text" id="texto">
+    <br>
+    <br>
+    <button class="btn">Convertir mensaje a mayúsculas</button>
+    <p id="resultado"></p>
+    <p id="resultadoMayusculas"></p>
+
+    <script>
+        //Dentro de este script debes seleccionar el input y el párrafo utilizando la función document.querySelector():
+        const input = document.querySelector('#texto');
+        const resultado = document.querySelector('#resultado');
+        // Que otras alternativas para seleccionar el input y el párrafo existen?
+        const resultadoMayusculas = document.querySelector('#resultadoMayusculas');
+        const btnConvertir = document.querySelector('.btn');
+
+        //Agrega un evento de escucha para el evento input del input. Esto permitirá que el código se ejecute cada vez que el usuario escribe algo en el input:
+        input.addEventListener('input', function () {
+            //Dentro del evento de escucha, captura el valor del input utilizando la propiedad value y conviértelo a mayúsculas utilizando el método toUpperCase():
+            const texto = input.value;
+            //Actualiza el contenido del párrafo con el texto en mayúsculas utilizando la propiedad textContent:
+            resultado.textContent = texto;
+        });
+
+        //Ahora cuando el usuario escriba algo en el input, el texto se mostrará en mayúsculas en el párrafo
+        btnConvertir.addEventListener('click', function () {
+            const texto = input.value.toUpperCase();
+            resultadoMayusculas.textContent = texto;
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+</script>
+</body>
+
+</html>
