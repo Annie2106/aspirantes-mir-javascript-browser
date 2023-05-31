@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+.container{
+    
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+  
+  #formTODO {
+    margin-bottom: 20px;
+  }
+  
+  #formTODO input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+  }
+  
+  #formTODO button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #taskList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #taskList li {
+    margin-bottom: 10px;
+  }
+  
+  #taskList label {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  
+  button[type="button"] {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #24CDDE;
+    color: #ffffff;
+  }
+  
+
+
+.is-completed {
+    text-decoration: line-through;
+  }
+  
+  #filterOptions {
+    margin-top: 10px;
+  }
+  
+  #filterOptions button {
+    margin-right: 5px;
+  }
